@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from audiolibrary.views import get_songs
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', get_songs)
 ]
